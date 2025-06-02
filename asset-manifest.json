@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/uw-foraging/static/css/main.f855e6bc.css",
-    "main.js": "/uw-foraging/static/js/main.66253792.js",
-    "static/js/453.ed3810f9.chunk.js": "/uw-foraging/static/js/453.ed3810f9.chunk.js",
-    "static/media/logo.svg": "/uw-foraging/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/uw-foraging/static/css/main.41b31e32.css",
+    "main.js": "/uw-foraging/static/js/main.c764d5f1.js",
+    "static/media/baylaurel.jpeg": "/uw-foraging/static/media/baylaurel.0ef23551439a4b8ae38d.jpeg",
+    "static/media/campus_map.jpeg": "/uw-foraging/static/media/campus_map.1037135ac21a5540217c.jpeg",
+    "static/media/lemonbalm.jpeg": "/uw-foraging/static/media/lemonbalm.169a442cdb9ebb1c5336.jpeg",
     "index.html": "/uw-foraging/index.html",
-    "main.f855e6bc.css.map": "/uw-foraging/static/css/main.f855e6bc.css.map",
-    "main.66253792.js.map": "/uw-foraging/static/js/main.66253792.js.map",
-    "453.ed3810f9.chunk.js.map": "/uw-foraging/static/js/453.ed3810f9.chunk.js.map"
+    "main.41b31e32.css.map": "/uw-foraging/static/css/main.41b31e32.css.map",
+    "main.c764d5f1.js.map": "/uw-foraging/static/js/main.c764d5f1.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.66253792.js"
+    "static/css/main.41b31e32.css",
+    "static/js/main.c764d5f1.js"
   ]
 }
