@@ -18,6 +18,7 @@ export class Plant extends Component<EditorProps, EditorState> {
     return <div>
       <h1>{this.props.marker.name}</h1>
       <img id="img" src={this.props.marker.photo_path} alt="Plant" />
+      <img id="img" src={this.props.marker.drawing_path} alt="Watercolor of Plant"/>
       <p id="text">{this.props.marker.info}</p>
     </div>;
   };

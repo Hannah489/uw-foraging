@@ -1,8 +1,7 @@
-import React, { Component, MouseEvent } from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
 import campusMap from './img/campus_map.jpeg';
-import { Marker, Location, MARKERS } from "./marker"; 
+import { Marker, MARKERS } from "./marker"; 
 import {Plant} from "./Plant";
 import {Sources} from "./Sources";
 
@@ -13,15 +12,13 @@ type AppProps = {};  // no props
 
 type AppState = {
   markers: Array<Marker>;
-  selected: Marker | undefined; 
-  newLocation?: Location;
+  selected: Marker | undefined;
   page: Page;
 };
 
 export class App extends Component<AppProps, AppState> {
   constructor(props: AppProps) {
     super(props);
-
     this.state = {markers: MARKERS, selected: undefined, page: {kind: "home"}};
   }
 
@@ -99,7 +96,7 @@ export class App extends Component<AppProps, AppState> {
   }
 
   doSourcesClick = (): void => {
-    this.setState({page: {kind: "sources"}});
+    this.setState({selected: undefined, page: {kind: "sources"}});
   }
 
   doHomeClick = (): void => {
