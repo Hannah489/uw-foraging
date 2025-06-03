@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/uw-foraging/static/css/main.5b30734d.css",
-    "main.js": "/uw-foraging/static/js/main.c723b0df.js",
+    "main.js": "/uw-foraging/static/js/main.56a8c08d.js",
     "static/media/baylaurel.jpeg": "/uw-foraging/static/media/baylaurel.0ef23551439a4b8ae38d.jpeg",
     "static/media/strawberrytree.jpeg": "/uw-foraging/static/media/strawberrytree.bf3e2dd390a182d18afe.jpeg",
     "static/media/crabapple.jpeg": "/uw-foraging/static/media/crabapple.73f17e8767a8d429f43b.jpeg",
@@ -24,10 +24,10 @@
     "static/media/dandelion.jpg": "/uw-foraging/static/media/dandelion.d46939eff0e3c02a05e1.jpg",
     "index.html": "/uw-foraging/index.html",
     "main.5b30734d.css.map": "/uw-foraging/static/css/main.5b30734d.css.map",
-    "main.c723b0df.js.map": "/uw-foraging/static/js/main.c723b0df.js.map"
+    "main.56a8c08d.js.map": "/uw-foraging/static/js/main.56a8c08d.js.map"
   },
   "entrypoints": [
     "static/css/main.5b30734d.css",
-    "static/js/main.c723b0df.js"
+    "static/js/main.56a8c08d.js"
   ]
 }
