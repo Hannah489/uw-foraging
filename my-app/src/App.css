@@ -31,11 +31,23 @@
 #header {
   font-size: 300%;
   margin-left: 30px;
+  display: inline-block;
+  border: none;
+  background: none;
+  font-family: Times New Roman, sans-serif;
 }
 
 #headerbar {
   background-color: lightblue;
-  padding: 0.20%;
+  padding: 1%;
+}
+
+#sources {
+  margin-left: 30%;
+  font-size: 200%;
+  border: none;
+  background: none;
+  font-family: Times New Roman, sans-serif;
 }
 
 #map {
@@ -43,6 +55,10 @@
   position: relative;
   width: 70%;
   height: 75%;
+}
+
+#text {
+  font-size: 150%;
 }
 
 #info {

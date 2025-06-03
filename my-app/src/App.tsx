@@ -4,6 +4,9 @@ import './App.css';
 import campusMap from './img/campus_map.jpeg';
 import { Marker, Location, MARKERS } from "./marker"; 
 import {Plant} from "./Plant";
+import {Sources} from "./Sources";
+
+type Page = {kind: "home"} | {kind: "sources"};
 
 
 type AppProps = {};  // no props
@@ -12,48 +15,70 @@ type AppState = {
   markers: Array<Marker>;
   selected: Marker | undefined; 
   newLocation?: Location;
+  page: Page;
 };
 
 export class App extends Component<AppProps, AppState> {
   constructor(props: AppProps) {
     super(props);
 
-    this.state = {markers: MARKERS, selected: undefined};
+    this.state = {markers: MARKERS, selected: undefined, page: {kind: "home"}};
   }
 
 
   render = (): React.JSX.Element => {
-    let show: React.JSX.Element = <div></div>;
-    if (!(typeof this.state.selected === "undefined")) {
-      show = <Plant marker={this.state.selected}/>;
+    if (this.state.page.kind === "home") {
+      let show: React.JSX.Element = <div></div>;
+      if (!(typeof this.state.selected === "undefined")) {
+        show = <Plant marker={this.state.selected}/>;
+      } else {
+        show = <div> 
+            <h1>UW Plants!</h1> 
+            <p id="text">Each dot represents a plant on UW campus that is edible. Click on each dot to learn more about the plant and how to eat it! </p>
+          </div>
+      }
+      return <div>
+        {this.renderHeader()};
+        <div id="map">
+          <img style={{width: "100%"}} src={campusMap} alt="Campus map with plant markers" />
+          {this.renderMarkers()};
+        </div>
+        <div id="info">
+          {show}
+        </div>
+      </div>;
+    } else {
+      return <div>
+        {this.renderHeader()};
+        <Sources/>
+        </div>;
     }
-    return <div>
-      <div id="headerbar">
-        <h2 id="header">Edible Plants Around UW Campus</h2>
-      </div>
-      <div id="map">
-        <img style={{width: "100%"}} src={campusMap} alt="Campus map with plant markers" />
+  };
 
-        {this.state.markers.map((marker: Marker, index: number) => (
-          <div
-            key={index}
-            className="marker"
-            style={{ left: `${marker.location.x}%`,
-              top: `${marker.location.y}%`,
-              position: "absolute",
-              width: marker.size,
-              height: marker.size,
-              backgroundColor: marker.color, 
-              borderRadius: "50%",
-              transform: "translate(-50%, -50%)", 
-              cursor: "pointer", }}
-            onClick={() => this.doMarkerClick(marker)}
-          />
-        ))}
-      </div>
-      <div id="info">
-        {show}
-      </div>
+  renderMarkers = (): Array<React.JSX.Element> => {
+    const elems: Array<React.JSX.Element> = [];
+    for (const marker of this.state.markers) {
+      elems.push(<div
+        className="marker"
+        style={{ left: `${marker.location.x}%`,
+          top: `${marker.location.y}%`,
+          position: "absolute",
+          width: marker.size,
+          height: marker.size,
+          backgroundColor: marker.color, 
+          borderRadius: "50%",
+          transform: "translate(-50%, -50%)", 
+          cursor: "pointer", }}
+        onClick={() => this.doMarkerClick(marker)}
+      />)
+    }
+    return elems;
+  };
+
+  renderHeader = (): React.JSX.Element => {
+    return <div id="headerbar"> 
+      <button id="header" onClick={this.doHomeClick}>Edible Plants Around UW Campus</button> 
+      <button id="sources" onClick={this.doSourcesClick}>Sources</button>
     </div>;
   };
 
@@ -73,5 +98,12 @@ export class App extends Component<AppProps, AppState> {
     this.setState({markers: markers, selected: marker});
   }
 
+  doSourcesClick = (): void => {
+    this.setState({page: {kind: "sources"}});
+  }
+
+  doHomeClick = (): void => {
+    this.setState({page: {kind: "home"}});
+  }
 }
 
