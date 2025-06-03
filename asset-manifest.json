@@ -1,16 +1,33 @@
 {
   "files": {
-    "main.css": "/uw-foraging/static/css/main.41b31e32.css",
-    "main.js": "/uw-foraging/static/js/main.c764d5f1.js",
+    "main.css": "/uw-foraging/static/css/main.5b30734d.css",
+    "main.js": "/uw-foraging/static/js/main.c723b0df.js",
     "static/media/baylaurel.jpeg": "/uw-foraging/static/media/baylaurel.0ef23551439a4b8ae38d.jpeg",
+    "static/media/strawberrytree.jpeg": "/uw-foraging/static/media/strawberrytree.bf3e2dd390a182d18afe.jpeg",
+    "static/media/crabapple.jpeg": "/uw-foraging/static/media/crabapple.73f17e8767a8d429f43b.jpeg",
+    "static/media/dandelion.jpeg": "/uw-foraging/static/media/dandelion.cea2bf422d3ff2053c92.jpeg",
+    "static/media/brackenfern.jpeg": "/uw-foraging/static/media/brackenfern.fbe0ad925255ee1ac3bc.jpeg",
     "static/media/campus_map.jpeg": "/uw-foraging/static/media/campus_map.1037135ac21a5540217c.jpeg",
+    "static/media/oregongrape.jpeg": "/uw-foraging/static/media/oregongrape.a42aed2139e48a188636.jpeg",
     "static/media/lemonbalm.jpeg": "/uw-foraging/static/media/lemonbalm.169a442cdb9ebb1c5336.jpeg",
+    "static/media/salal.jpeg": "/uw-foraging/static/media/salal.1204e0d9ba09886a1cc4.jpeg",
+    "static/media/wildstrawberry.jpeg": "/uw-foraging/static/media/wildstrawberry.4737e63e5bf56d03d45a.jpeg",
+    "static/media/duck.jpeg": "/uw-foraging/static/media/duck.5c48bd083f0e80c0bfdf.jpeg",
+    "static/media/oregongrape.jpg": "/uw-foraging/static/media/oregongrape.09a45200ce30bd44b674.jpg",
+    "static/media/wildstrawberry.jpg": "/uw-foraging/static/media/wildstrawberry.bfdade53e2a5ccb38638.jpg",
+    "static/media/salal.jpg": "/uw-foraging/static/media/salal.d8e360bd790dc7102051.jpg",
+    "static/media/brackenfern.jpg": "/uw-foraging/static/media/brackenfern.8ef9b903bb5496474680.jpg",
+    "static/media/strawberrytree.jpg": "/uw-foraging/static/media/strawberrytree.0dccf2f7895ebcd94942.jpg",
+    "static/media/crabapple.jpg": "/uw-foraging/static/media/crabapple.2433b9cae201cd11c0fc.jpg",
+    "static/media/lemonbalm.jpg": "/uw-foraging/static/media/lemonbalm.8a0ec5373a2fb9e1ee97.jpg",
+    "static/media/baylaurel.jpg": "/uw-foraging/static/media/baylaurel.39c68a241a0653512344.jpg",
+    "static/media/dandelion.jpg": "/uw-foraging/static/media/dandelion.d46939eff0e3c02a05e1.jpg",
     "index.html": "/uw-foraging/index.html",
-    "main.41b31e32.css.map": "/uw-foraging/static/css/main.41b31e32.css.map",
-    "main.c764d5f1.js.map": "/uw-foraging/static/js/main.c764d5f1.js.map"
+    "main.5b30734d.css.map": "/uw-foraging/static/css/main.5b30734d.css.map",
+    "main.c723b0df.js.map": "/uw-foraging/static/js/main.c723b0df.js.map"
   },
   "entrypoints": [
-    "static/css/main.41b31e32.css",
-    "static/js/main.c764d5f1.js"
+    "static/css/main.5b30734d.css",
+    "static/js/main.c723b0df.js"
   ]
 }
