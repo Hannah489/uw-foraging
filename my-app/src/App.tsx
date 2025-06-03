@@ -96,7 +96,20 @@ export class App extends Component<AppProps, AppState> {
   }
 
   doSourcesClick = (): void => {
-    this.setState({selected: undefined, page: {kind: "sources"}});
+    if (this.state.selected !== undefined) {
+      let index = 0;
+      let markers: Array<Marker> =this.state.markers;
+      for (const mark of this.state.markers) {
+        if (mark.name === this.state.selected.name) {
+          markers[index].color = "red";
+          markers[index].size = "20px";
+        }
+        index += 1;
+      }
+      this.setState({selected: undefined, page: {kind: "sources"},  markers: markers});
+    } else {
+      this.setState({page: {kind: "sources"}});
+    }
   }
 
   doHomeClick = (): void => {

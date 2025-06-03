@@ -26,6 +26,7 @@ export class Sources extends Component<EditorProps, EditorState> {
         <li>Northern Gardener. (2021). Plant profile: Lovely lemon balm. Minnesota State Horticultural Society. https://northerngardener.org/lemon-balm/</li>
         <li>UW Campus Tree Tours. Strawberry Tree. https://sites.google.com/uw.edu/schoolofenvironmentalandforest/brockman-memorial-tree-tour/strawberry-tree?authuser=0 </li>
       </ul>
+      <h2>Watercolors are by Priya, a UW student!</h2>
     </div>;
   };
 }
